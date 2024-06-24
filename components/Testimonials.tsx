@@ -27,7 +27,7 @@ const Testimonials = () => {
           <div className='flex justify-between mb-44'>
               {/* ///////////////////////////////////// left /////////////////////////////////// */}
               
-              <div className='w-1/2'>
+              <div className='w-1/2 '>
                   <span className='text-[#5E6282]'>Testimonials</span>
                   <h1 className='font-extrabold text-5xl pt-4 text-[#14183E]'>What People Say <br />About Us.</h1>
 
@@ -40,11 +40,11 @@ const Testimonials = () => {
                       
                   </div>
               </div>
-              {/* ///////////////////////////////////// right /////////////////////////////////// */}
-              
+        {/* ///////////////////////////////////// right /////////////////////////////////// */}
+        
                  <div className='w-1/2 flex flex-col items-center justify-start space-y-4 relative'>
                     {testimonials.map((test, index) => (
-                        <div key={test.id} className={` p-4 flex ${index === 1? 'absolute top-0' : 'absolute top-20 ml-12 '} w-full`}>
+                        <div key={test.id} className={` p-4 flex  ${index === 1? 'absolute top-0' : 'absolute top-20 ml-12 '} w-full`}>
                             <Image src={test.img} alt="logo-image" className='w-8 h-8 rounded-full object-cover absolute top-0 left-2 ' width={400} height={100} />
             
                             <div className='shadow-md  bg-white rounded-md p-6'>

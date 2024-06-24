@@ -31,7 +31,7 @@ const Companies = () => {
       <div className='flex justify-between items-center space-x-4 mb-24'>
           {companies.map((comp) => (
                 // <div key={comp.id} className={`flex justify-center items-center ${comp.id === 3? 'shadow-lg' : ''}`}>
-                <div key={comp.id} className={`flex justify-center items-center`}>
+                <div key={comp.id} className={`flex flex-grow justify-center items-center`}>
                  <Image src={comp.img} alt="logo-image" className=' object-contain ' width={150} height={50} />
               </div>
           ))}
